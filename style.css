@@ -79,8 +79,6 @@ li {
 }
 
 .bicycle_img {
-    width: 250px;
-    height: 170px;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -97,4 +95,26 @@ li {
 
 .bicycle_title {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #mainvisual img {
+        height: calc(100vh - 60px);
+    }
+    #about .content {
+        flex-direction: column;
+    }
+    
+    #about img {
+        margin-right: 0;
+    }
+
+    #bicycle ul {
+        flex-direction: column;
+    }
+
+    #bicycle li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
